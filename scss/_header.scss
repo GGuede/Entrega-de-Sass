@@ -1,0 +1,97 @@
+.contenedor{display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 8fr auto;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    .header{
+        background-color: $colorNav;
+        grid-area: header;
+        .listaHead{
+            display:flex;
+            justify-content: space-between;
+            padding-left: 2rem;
+            text-align: center;
+            .categorias{
+                display:inline-block;
+                transition: all 0.4s ease;
+                &:hover{background-color: black;
+                    transform: scale(1.1,1.1);
+                    height: auto;
+                    color:$colorNav;}
+                }
+            .sobreNosotros{
+                display: inline-block;
+                transition: all 0.4s ease;
+                    &:hover{
+                        background-color: black;
+                        transform: scale(1.1,1.1);
+                        height: auto;
+                        color: $colorNav;
+                    }
+                }
+            .contacto{
+                display: inline-block;
+                transition: all 0.4s ease;
+                &:hover{background-color: black;
+                    transform: scale(1.1,1.1);
+                    height: auto;
+                    color: $colorNav;}
+                }
+                        
+                .home{
+                    display: inline-block;
+                    transition: all 0.4s ease;
+                    &:hover{background-color: black;
+                        transform: scale(1.1,1.1);
+                        height: auto;
+                        color: $colorNav;}
+                    }
+                        
+                
+                }
+        }
+    }
+
+h1{color: $colorPrincipal;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.6rem;}
+    
+ul{list-style: none
+; color: $colorPrincipal;padding: 1rem;}
+
+ul li a{text-decoration: none;
+color: $colorPrincipal;}
+
+
+li {
+    display: inline-block;
+    position:relative;}
+
+ ul ul {
+    position: absolute;
+    display: none;
+    border:solid $colorPrincipal;
+    padding: 1rem;
+    background-image:url(./Multimedia/aorus-logo.rgb.png);
+    background-color: $colorNav;
+    background-repeat: no-repeat;
+    background-position: left center;}
+
+ ul ul li {
+    display: block;
+    margin: 1rem;
+ }
+ ul li:hover ul {
+    display:block;}
+
+
+        
+        
+        
+        
+    
+        
+   

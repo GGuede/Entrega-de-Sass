@@ -1,0 +1,168 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 8fr auto;
+  grid-template-areas: "header header" "main main" "footer footer"; }
+  .contenedor .header {
+    background-color: #ffffff;
+    grid-area: header; }
+    .contenedor .header .listaHead {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2rem;
+      text-align: center; }
+      .contenedor .header .listaHead .categorias {
+        display: inline-block;
+        transition: all 0.4s ease; }
+        .contenedor .header .listaHead .categorias:hover {
+          background-color: black;
+          transform: scale(1.1, 1.1);
+          height: auto;
+          color: #ffffff; }
+      .contenedor .header .listaHead .sobreNosotros {
+        display: inline-block;
+        transition: all 0.4s ease; }
+        .contenedor .header .listaHead .sobreNosotros:hover {
+          background-color: black;
+          transform: scale(1.1, 1.1);
+          height: auto;
+          color: #ffffff; }
+      .contenedor .header .listaHead .contacto {
+        display: inline-block;
+        transition: all 0.4s ease; }
+        .contenedor .header .listaHead .contacto:hover {
+          background-color: black;
+          transform: scale(1.1, 1.1);
+          height: auto;
+          color: #ffffff; }
+      .contenedor .header .listaHead .home {
+        display: inline-block;
+        transition: all 0.4s ease; }
+        .contenedor .header .listaHead .home:hover {
+          background-color: black;
+          transform: scale(1.1, 1.1);
+          height: auto;
+          color: #ffffff; }
+
+h1 {
+  color: #9f0000;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.6rem; }
+
+ul {
+  list-style: none;
+  color: #9f0000;
+  padding: 1rem; }
+
+ul li a {
+  text-decoration: none;
+  color: #9f0000; }
+
+li {
+  display: inline-block;
+  position: relative; }
+
+ul ul {
+  position: absolute;
+  display: none;
+  border: solid #9f0000;
+  padding: 1rem;
+  background-image: url(./Multimedia/aorus-logo.rgb.png);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: left center; }
+
+ul ul li {
+  display: block;
+  margin: 1rem; }
+
+ul li:hover ul {
+  display: block; }
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column; }
+  .main .divBanner {
+    text-align: center; }
+    .main .divBanner .banner {
+      border: solid #9f0000; }
+  .main .seccionOfertas {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    padding: 1rem; }
+    .main .seccionOfertas .divOfertas {
+      text-align: center; }
+      .main .seccionOfertas .divOfertas .ofertas {
+        text-align: center;
+        margin: 2rem;
+        color: #9f0000; }
+    .main .seccionOfertas .im {
+      margin: 1rem;
+      border: #9f0000 solid;
+      transition: all 0.4s ease; }
+      .main .seccionOfertas .im:hover {
+        transform: scale(1.1, 1.1);
+        height: auto; }
+
+.footer {
+  background-color: #ffffff;
+  padding: 2rem;
+  grid-area: footer; }
+  .footer .listaFooter {
+    display: flex;
+    justify-content: space-between; }
+    .footer .listaFooter .redesSociales {
+      word-spacing: 1rem; }
+
+footer ul li {
+  padding-left: 1rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #242424;
+  font-family: 'Gugi', cursive;
+  text-transform: capitalize; }
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer"; } }
+
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "aside" "main" "footer"; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header" "aside" "main" "footer"; } }
+
+@media screen and (max-width: 1024px) {
+  .contenedorContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    grid-template-areas: "header" "aside" "main" "footer"; } }
+
+@media screen and (max-width: 1024px) {
+  .contenedorSobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    grid-template-areas: "header" "aside" "main" "footer"; } }
+
+@media screen and (max-width: 480px) {
+  .contenedorSobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    grid-template-areas: "header" "aside" "main" "footer"; } }

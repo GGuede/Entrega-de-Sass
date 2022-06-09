@@ -1,0 +1,15 @@
+.footer{
+    background-color: $colorNav;
+    padding: 2rem;
+    grid-area: footer;
+    .listaFooter{
+        display: flex;
+        justify-content: space-between;
+        .redesSociales{
+            word-spacing: 1rem;}
+        }
+    }
+
+
+footer ul li{
+padding-left: 1rem;}

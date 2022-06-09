@@ -1,0 +1,32 @@
+.main{
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+    .divBanner{
+        text-align: center;
+        .banner{border:solid $colorPrincipal;}
+    }
+    .seccionOfertas{
+        text-align: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 5rem;
+        padding: 1rem;
+        .divOfertas{
+            text-align: center;
+            .ofertas{
+                text-align: center;
+                margin: 2rem;
+                color: $colorPrincipal;}
+            }
+            .im{margin: 1rem;
+                border: $colorPrincipal solid;
+                transition: all 0.4s ease;
+                &:hover{
+                    transform: scale(1.1,1.1);
+                    height: auto;}
+                }
+            }
+    }
+    
+   
